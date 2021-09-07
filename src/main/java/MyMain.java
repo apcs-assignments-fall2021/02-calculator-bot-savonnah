@@ -4,10 +4,33 @@ public class MyMain {
 
     // Calculates the median of the three inputs
     public static int median(int a, int b, int c) {
-        double total = a + b + c;
-        int changing = (int)total;
-        int median = (changing/3);
-        return (median);
+        if (a < b && a > c) {
+            int median1 = a;
+            return median1;
+        }
+        else if (a > b && a < c){
+            int median2 = a;
+            return median2;
+        }
+        else if (b > a && b < c) {
+            int median3 = b;
+            return median3;
+        }
+        else if (b < a && b > c) {
+            int median4 = b;
+            return median4;
+        }
+        else if (c > a && c < b) {
+            int median5 = c;
+            return median5;
+        }
+        else if (c < a && c > b) {
+            int median6 = c;
+            return median6;
+        }
+        else {
+            return a;
+        }
     }
 
     // Returns the input with the larger absolute value
@@ -31,7 +54,6 @@ public class MyMain {
         double c = Math.sqrt(csqr);
         return c; // REPLACE WITH YOUR CODE
     }
-
     public static void main(String[] args) {
         // You may want to keep these lines of code to test that your methods work
         //System.out.println(median(1, 2, 3)); // should be 2

@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class MyMain {
-
+//Calc bot
     // Calculates the median of the three inputs
     public static int median(int a, int b, int c) {
         if (a < b && a > c) {
